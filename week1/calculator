@@ -16,20 +16,20 @@ class calculator
     input.close();
     if(choice==1)
     {
-      System.out.print("The sum of the values "+a+" and "+b+" is "+(a+b));
+      System.out.print("\nThe sum of the values "+a+" and "+b+" is "+(a+b));
     }
     else if(choice==2)
     {
-      System.out.print("The difference of the values "+a+" and "+b+" is "+(a-b));
+      System.out.print("\nThe difference of the values "+a+" and "+b+" is "+(a-b));
 
     }
     else if(choice==3)
     {
-      System.out.print("The product of the values "+a+" and "+b+" is "+(a*b));
+      System.out.print("\nThe product of the values "+a+" and "+b+" is "+(a*b));
     }
     else if(choice==4)
     {
-      System.out.print("The quotient of the values "+a+" and "+b+" is "+(a/b));
+      System.out.print("\nThe quotient of the values "+a+" and "+b+" is "+(a/b));
     }
     else
     {
