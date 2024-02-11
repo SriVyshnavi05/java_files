@@ -7,7 +7,8 @@ int main()
 cout<<"My name is Sri Vyshnavi"<<endl;
 //using ends cout<<"Hi"<<ends; cout<<endl;
 //terminates by inserting null operator
-//using ws string name;
+//using ws 
+string name;
 getline(cin>>ws,name); cout<<name<<endl;
 //removes whitespaces if they are present
 //setw cout<<setw(6)<<"Hi\n";
@@ -19,7 +20,9 @@ cout<<setfill('^')<<setw(12)<<"Hi maga\n";
 double num=0.233423423424; 
 cout<<setprecision(4)<<num<<endl;
 //setprecision decides the values after the decimal points
-//flush int a=10;
+//flush 
+int a=10;
 cout.flush();
-cout<<"The value of a is "<<a; return 0;
+cout<<"The value of a is "<<a; 
+return 0;
 }
