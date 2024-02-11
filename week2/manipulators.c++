@@ -14,7 +14,7 @@ getline(cin>>ws,name); cout<<name<<endl;
 //setw cout<<setw(6)<<"Hi\n";
 //creates spaces provides in setw(n)
 //setfill
-cout<<setfill('^')<<setw(12)<<"Hi maga\n";
+cout<<setfill('^')<<setw(12)<<"Hi "<<name<<"\n";
 //fills the space given by setw
 //setprecision
 double num=0.233423423424; 
