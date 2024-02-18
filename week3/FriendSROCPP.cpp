@@ -8,20 +8,25 @@ Note: Take the input from the user*/
 using namespace std;
 class Box {
     //inline function
-    inline displayWelcomeMessage(){
+    inline void displayWelcomeMessage(){
         cout<<"HELLO FOLKS!!"<<endl;
     }
-    //member function
+class Box
+{
+private:
+float length;
+float width;
+float height;
+public:
+
     void boxArea(float length, float width,float height){
         cout<<"Area of box is "<<2*((length*width)+(width*height)+(height*length))<<endl;
     }
-    //non member function
     void boxVolume(float length, float width, float height)
-    //friend function
-    void displayBoxDimensions()
+    friend void displayBoxDimensions(BOx d);
 };
-//non member function
-void boxVolume(float length, float width, float height){
+//member function
+voidBOX :: boxVolume(float length, float width, float height){
     cout<<"Enter length:"<<endl;
     cin>>length;
     cout<<"Enter width:"<<endl;
@@ -31,13 +36,15 @@ void boxVolume(float length, float width, float height){
     cout<<"Volume of box is "<<(length*width*height)<<endl;
 }
 //friend function
-void displayBoxDimensions()
+void displayBoxDimensions(Box d)
 {
-    cout<<"Dimensions of the box are "<<(length,width,height)<<endl;
+    cout<<"Dimensions of the box are "<<(d.length"X"d.width"X"d.height)<<endl;
 }
 int main()
 {
-    Box obj;
-    inline displayWelcomeMessage();
-    void displayBoxDimensions();
+    Box b;
+    b.boxArea(float length, float width, float height);
+    b.boxvolume(float length, float width, float height);
+    displayWelcomeMessage();
+    displayBoxDimensions(b);   
 }
