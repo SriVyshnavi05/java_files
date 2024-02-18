@@ -1,13 +1,12 @@
 #include<iostream>
 using namespace std;
-
 class Student
 {
     public:
         Student()
         {
             string collegeName = "MVGR";
-            int collegeCode=050;
+            int collegeCode=75;
             cout<<"CollegeName : "<<collegeName<<endl;
             cout<<"CollegeCode: "<<collegeCode<<endl;
         }
@@ -16,9 +15,7 @@ class Student
             cout<<"FullName : "<<fullName<<endl;
             cout<<"SemPercentage : "<<semPerentage<<endl;
         }
-        ~Student(){
-         cout<<"I'M GONE!!!!"<<endl; 
-        }
+        ~Student(){}
 };
 int main()
 {
@@ -29,6 +26,6 @@ int main()
     getline(cin,name);
     cout<<"Enter your sem percentage : ";
     cin>>val;
-    Student SriVyshnai05(name,val);
+    Student Vyshnavi05(name,val);
     return 0;
 }
