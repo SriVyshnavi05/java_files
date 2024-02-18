@@ -6,6 +6,7 @@ Also using #include, #ifdef and #ifndef write a C++ program to display area and 
 #include<iostream>
 #ifndef pi
 #define pi 3.14
+#endif
 #include "boxarea.h"
 #include "boxvolume.h"
 using namespace std;
