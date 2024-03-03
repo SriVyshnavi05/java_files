@@ -22,7 +22,7 @@ class student {
       return semper;
     }
 };
-class child : public student {
+class details : public student {
   public:
     // function to access protected member from Base
     int getProt() {
@@ -31,7 +31,7 @@ class child : public student {
     }
 };
 int main() {
-  child object1;
+  details object1;
   object1.studname();
   object1.getProt();
   object1.getPVT();
