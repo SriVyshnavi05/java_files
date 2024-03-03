@@ -5,7 +5,7 @@ class mainclass
 public:
 void aClass()
 {
-cout<<"I am a mainclass\n";
+cout<<"I am a mainclass"<<endl;
 }
 };
 class subclass1: public mainclass
@@ -13,7 +13,7 @@ class subclass1: public mainclass
 public:
 void bClass()
 {
-cout<<"I am a subclass1\n";
+cout<<"I am a subclass1"<<endl;
 }
 };
 class subclass2: public mainclass
@@ -21,7 +21,7 @@ class subclass2: public mainclass
 public:
 void cClass()
 {
-cout<<"I am asubclass2\n";
+cout<<"I am asubclass2"<<endl;
 }
 };
 class subclass3: public subclass2,public subclass1
@@ -29,7 +29,7 @@ class subclass3: public subclass2,public subclass1
 public:
 void dClass()
 {
-cout<<"I am a subclass3\n";
+cout<<"I am a subclass3"<<endl;
 }
 };
 int main()
