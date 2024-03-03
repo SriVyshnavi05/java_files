@@ -1,19 +1,28 @@
 #include<iostream>
-#include<string>
 using namespace std;
-// Base class
-class parent {
-  public: 
-    string name = "KRISHNA";
+class Space {
+    public:
+    void Sun(){
+        cout<<"I appear during day time."<<endl;
+    }
+    void Moon(){
+        cout<<"I appear during night time."<<endl;
+    }
 };
-// Derived class
-class child: public parent {
-  public: 
-    string daughter = "VYSHNAVI";
+class SolarSystem : public Space {
+    public:
+    void Earth(){
+        cout<<"I'm the only planet with life!"<<endl;
+    }
+    void Jupiter(){
+        cout<<"I'm having 8 moons."<<endl;
+    }
 };
-
-int main() {
-  child mychild;
-  cout<<mychild.name<<":I'm "<<mychild.daughter<<"'s father."<<endl;
-  return 0;
+int main()
+{
+    SolarSystem obj;
+    obj.Sun();
+    obj.Moon();
+    obj.Earth();
+    obj.Jupiter();
 }
