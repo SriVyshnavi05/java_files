@@ -14,7 +14,7 @@ public class exceptionHandling extends Thread{
         }catch (SQLException e) {
             e.printStackTrace();
         }
-        Interrupted Exception
+        //Interrupted Exception
         Thread obj=new Thread();
         try{
             Thread.sleep(4000);
