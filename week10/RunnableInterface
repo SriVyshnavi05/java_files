@@ -1,0 +1,14 @@
+public class RunnableInterface implements Runnable{
+    String name;
+    RunnableInterface(String name)
+    {
+        this.name=name;
+    }
+    public void run(){
+        System.out.println("Hello,My name is "+name);
+    }
+    public static void main(String[] args) {
+        RunnableInterface obj = new RunnableInterface("Vyshnavi");
+        obj.run();
+    }
+}
