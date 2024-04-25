@@ -1,0 +1,21 @@
+public class Threadclass extends Thread{
+    int num;
+    Threadclass(int num){
+        this.num=num;
+    }
+    public void run(){
+        multiply();
+    }
+    public void multiply(){
+        for(int i=0;i<13;i++){
+            System.out.println(num+" * "+i+ "=" +num*i);
+        }
+    }
+    public static void main(String[] args) {
+        Threadclass obj = new Threadclass(3);
+        Threadclass obj1 = new Threadclass(5);
+        obj.start();
+        obj1.start();
+    }
+
+}
