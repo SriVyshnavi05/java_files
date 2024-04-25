@@ -3,7 +3,7 @@ class GroceryException extends Exception{
         System.out.println("The quality of the groceries is not up to the mark\nVery disappointed.");
     }
 }
-public class Main {
+public class grocery{
     public static void main(String[] args) throws GroceryException{
       int groceryQuality=35;
         if(groceryQuality>80){
